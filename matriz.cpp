@@ -1,14 +1,17 @@
-#include<iostream>
+#include <iostream>
+#include <locale.h>
 
 using namespace std;
 
 int main () {
 
+    setlocale(LC_ALL,"");
+    
     int M, N, i, j;
 
-    cout << "Quantas linhas tera a matriz?: ";
+    cout << "Quantas linhas terá a matriz?: ";
     cin >> M;
-    cout << "Quantas colunas tera a matriz?: ";
+    cout << "Quantas colunas terá a matriz?: ";
     cin >> N;
 
     int mat[M][N];
