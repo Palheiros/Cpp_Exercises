@@ -11,7 +11,7 @@ int main (){
 
     setlocale (0,"");
 
-    int vetor [TAM] = {1,23,38,45,52,61,78,87,91,100};
+    int vetor [TAM];
     int valorProcurado, posicao;
     bool valorEncontrado;
 
@@ -27,7 +27,7 @@ int main (){
         cout << vetor[i] << " - ";
     }
     cout << endl;
-    cout << endl << "Qual número deseja encontrar? ";
+    cout << endl << "Qual nÃºmero deseja encontrar? ";
     cin >> valorProcurado;
     cout << endl;
 
@@ -40,9 +40,9 @@ int main (){
     }
 
     if (valorEncontrado){
-        cout << "O valor foi encontrado na posição: " << posicao;
+        cout << "O valor foi encontrado na posiÃ§Ã£o: " << posicao;
     } else {
-        cout << "O valor não foi encontrado";
+        cout << "O valor nÃ£o foi encontrado";
     }
 
 
